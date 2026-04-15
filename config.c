@@ -1,25 +1,21 @@
 #include "config.h"
+#include "loan.h"
 
 #include <stdio.h>
 #include <stdlib.h>
-
-typedef struct {
-    double sum;
-    int time;
-    double interest;
-} Loan;
+#include <string.h>
 
 void readCFG(const char *filename, queue* Q){
     FILE* file = fopen(filename, "r");
     if (file == NULL) {
         perror("Nepavyko atidaryti failo");
-        return NULL;
     }
 
     // Skaitome failą kol pasiekiame pabaigą
     // Tikimės formato: %lf (double) %d (int) %lf (double)
     Loan read;
     while (fscanf(file, "%lf %d %lf", &read.sum, &read.time, &read.interest) == 3) {
+        enqueue(Q, read);
     }
 
     fclose(file);
@@ -39,4 +35,15 @@ int getRND(int argc, char *argv[]) {
         }
     }
     return -1; // Parametras nerastas
+}
+
+const char* findCFG(int argc, char* argv[]) {
+    for (int i = 1; i < argc; i++) {
+        // Tikriname, ar argumento pabaigoje yra ".cfg"
+        char* extension = strrchr(argv[i], '.');
+        if (extension != NULL && strcmp(extension, ".cfg") == 0) {
+            return argv[i];
+        }
+    }
+    return NULL;
 }

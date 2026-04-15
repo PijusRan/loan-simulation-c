@@ -1,6 +1,8 @@
 #ifndef QUEUE_INT
 #define QUEUE_INT
 
+#include "loan.h"
+
 typedef struct { 
     int *items;
     unsigned int size, count;
@@ -49,7 +51,7 @@ char* toStringQueue(queue* Q);
 // enqueue: prideda item prie eilės
 // Precondition: eilė Q nėra perpildyta
 // Postcondition: elementas yra pridėtas į eilę ir count padidėja 1 arba klaida konsolėje
-void enqueue(queue* Q, int item);
+void enqueue(queue* Q, Loan item);
 
 // dequeue: išima pirmutinį elementą iš eilės
 // Precondition: Eilė nėra tuščia ir jos dydis nėra 0

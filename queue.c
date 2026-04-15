@@ -74,7 +74,7 @@ char* toStringQueue(queue* Q) {
 }
 
 void enqueue(queue* Q, Loan item){
-    if(isFull(Q)){
+    if(isFullQueue(Q)){
         printf("Klaida: eilė pilna.\n");
         return;
     }
@@ -84,7 +84,7 @@ void enqueue(queue* Q, Loan item){
 }
 
 void dequeue(queue* Q){
-    if(isEmpty(Q)){
+    if(isEmptyQueue(Q)){
         printf("Klaida: eilė jau tuščia.\n");
         return;
     }

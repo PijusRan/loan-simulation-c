@@ -8,10 +8,14 @@
 
 // Funkcijos prototipas
 int main(int argc, char *argv[]) {
-
-    // ===== PARAMETRAI =====
+    queue* loanQueue = CreateQueue(10);
+    readCFG(findCFG(argc, argv), loanQueue);
+    unsigned int randomSeed = getRND(argc, argv);
     
+    printf("Random Seed: %d\n\n", randomSeed);
+    printf("%s", toStringQueue(loanQueue));
 
+    
     return 0;
 }
 
