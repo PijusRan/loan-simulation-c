@@ -3,9 +3,11 @@
 
 typedef struct {
     double sum;
-    int time;
     double interest;
     double lateFees;
+    int time;
+    double interestRate;
+    double lateFeeRate;
 } Loan;
 
 #endif

@@ -1,2 +1,2 @@
-main: main.c config.h config.c loan.h queue.h queue.c
-	gcc main.c config.h config.c loan.h queue.h queue.c -o main
+main: main.c config.h config.c loan.h queue.h queue.c simulations.h simulations.c priority_queue.c priority_queue.h
+	gcc main.c config.h config.c loan.h queue.h queue.c simulations.h simulations.c priority_queue.c priority_queue.h -o main

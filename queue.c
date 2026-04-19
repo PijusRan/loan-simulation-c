@@ -45,8 +45,8 @@ unsigned int isFullQueue(queue* Q){
     return (Q->count == (*Q).size) ? 1 : 0;
 }
 
-Loan peekQueue(queue* Q){
-    return Q->items[0];
+Loan* PeekQueue(queue* Q){
+    return &(Q->items[0]);
 }
 
 char* toStringQueue(queue* Q) {
@@ -54,19 +54,23 @@ char* toStringQueue(queue* Q) {
     char* result = (char*)malloc(bufferSize);
 
     result[0] = '\0';
-    char temp[132];
+    char temp[255];
 
     for (int i = 0; i < Q->count; i++) {
         snprintf(temp, sizeof(temp),
                  "Skola:\n"
                  "    Paskola: %.2f\n"
-                 "    Laikotarpis: %d\n"
                  "    Palūkanos: %.2f\n"
-                 "    Delspinigiai: %.2f\n",
+                 "    Delspinigiai: %.2f\n"
+                 "    Laikotarpis: %d\n"
+                 "    Palūkanos norma: %.2f\n"
+                 "    Delspinigių norma: %.2f\n",
                  Q->items[i].sum, 
+                 Q->items[i].interest,
+                 Q->items[i].lateFees,
                  Q->items[i].time, 
-                 Q->items[i].interest, 
-                 Q->items[i].lateFees);
+                 Q->items[i].interestRate, 
+                 Q->items[i].lateFeeRate);
         strcat(result, temp);
     }
 

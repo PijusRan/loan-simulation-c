@@ -4,7 +4,7 @@
 #include "loan.h"
 
 typedef struct { 
-    int *items;
+    Loan* items;
     unsigned int size, count;
 } queue;
 
@@ -41,7 +41,7 @@ unsigned int isFullQueue(queue* Q);
 // Peek: grąžina patį viršutinį elementą eilėje
 // Precondition: Q nėra nullptr, Q turi mažiausiai 1 elementą
 // Postcondition: grąžina pirmąjį elementą eilėje (int)
-int PeekQueue(queue* Q);
+Loan* PeekQueue(queue* Q);
 
 // toString: paverčia eilę į teksto eilutę ir grąžina
 // Precondition: Q nėra nullptr
