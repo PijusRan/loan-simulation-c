@@ -21,11 +21,11 @@ nuo kurių priklauso procesas, įvedami kaip programos parametrai.
 #include <string.h>
 #include <time.h>
 
-#include "config.h"
-#include "loan.h"
-#include "simulations.h"
-#include "queue.h"
-#include "priority_queue.h"
+#include "./simulation/config.h"
+#include "./simulation/loan.h"
+#include "./simulation/simulations.h"
+#include "./queue-types/queue.h"
+#include "./queue-types/priority_queue.h"
 
 // Funkcijos prototipas
 int main(int argc, char *argv[]) {

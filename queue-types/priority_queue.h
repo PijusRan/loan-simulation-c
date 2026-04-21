@@ -1,5 +1,4 @@
-
-#include "loan.h"
+#include "../simulation/loan.h"
 
 typedef struct Node {
   Loan value;

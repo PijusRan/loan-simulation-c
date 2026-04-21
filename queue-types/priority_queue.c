@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "loan.h"
+#include "../simulation/loan.h"
 
 typedef struct Node {
   Loan value;

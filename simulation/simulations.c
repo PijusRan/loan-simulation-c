@@ -2,8 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-#include "queue.h"
-#include "priority_queue.h"
+#include "loan.h"
+#include "../queue-types/queue.h"
+#include "../queue-types/priority_queue.h"
 
 void pay(double* from, double* to){
     if(*to > 0){

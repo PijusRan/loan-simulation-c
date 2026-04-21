@@ -1,7 +1,7 @@
 #ifndef QUEUE_INT
 #define QUEUE_INT
 
-#include "loan.h"
+#include "../simulation/loan.h"
 
 typedef struct { 
     Loan* items;

@@ -1,5 +1,5 @@
-#include "queue.h"
-#include "priority_queue.h"
+#include "../queue-types/queue.h"
+#include "../queue-types/priority_queue.h"
 #include "config.h"
 #include "loan.h"
 
