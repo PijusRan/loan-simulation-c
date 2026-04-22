@@ -43,10 +43,10 @@ int main(int argc, char *argv[]) {
 
     // === PRADINIŲ MOKĖJIMŲ SIMULIACIJA ===
     double queueSimulation = simulateQueue(loanQueue, randomSeed);
-    printf("Simuliuojant eilę sumokėta: %lf\n\n", queueSimulation);
+    printf("Simuliuojant eilę sumokėta: %.2f\n\n", queueSimulation);
 
     double PqueueSimulation = simulatePQueue(loanPQueue, randomSeed);
-    printf("Simuliuojant prioritetinę eilę sumokėta: %lf\n\n", PqueueSimulation);
+    printf("Simuliuojant prioritetinę eilę sumokėta: %.2f\n\n", PqueueSimulation);
     
     return 0;
 }
