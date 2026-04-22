@@ -1,3 +1,6 @@
+#ifndef PQUEUE
+#define PQUEUE
+
 #include "../simulation/loan.h"
 
 typedef struct Node {
@@ -22,3 +25,5 @@ void delete_pq(PQueue *p);
 
 Loan* peek_pq(PQueue *p);
 int count_pq(PQueue *p);
+
+#endif

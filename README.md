@@ -6,11 +6,11 @@
 
 ---
 
-Sukurtas modulis simuliuoja du skolų padengimo variantus ir apskaičiuoja kokios buvo bendros išlaidos jas padengiant.
+Sukurtas modulis simuliuoja du skolų padengimo variantus ir apskaičiuoja kokios buvo bendros išlaidos jas padengiant. Naudojama eilė ir prioritetinė eilė simuliacijoms, kada dengiamos seniausios skolos ir dengiamos skolos pagal tipus ir dydį.
 
 ## Bendravimas ir Bendradarbiavimas
 
-Prioritetinės eilės sprendimas buvo pasiskolintas ir pakeistas iš Jorio Uniko (joun2378). Buvo naudojama mano eilė, taip pat pakoreguota.
+Prioritetinės eilės sprendimas buvo pasiskolintas ir pakeistas iš Jorio Uniko (joun2378). Buvo naudojama mano eilė, taip pat pakoreguota. Taip pat bendradarbiauta su kolegomis Patriku ir Klaudijumi.
 
 ## Programos naudojimas
 
@@ -33,7 +33,7 @@ $ ./Go.cmd
 ### Paleistis sukompiliavus
 
 ```
-main.exe <failas> -rnd 67
+$ main.exe <failas> -rnd 67
 ```
 
 Parametrai:

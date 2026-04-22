@@ -1,5 +1,5 @@
-#ifndef QUEUE_INT
-#define QUEUE_INT
+#ifndef QUEUE
+#define QUEUE
 
 #include "../simulation/loan.h"
 
