@@ -39,14 +39,14 @@ int main(int argc, char *argv[]) {
 
     // Random reikšmė
     unsigned int randomSeed = getRND(argc, argv);
-    printf("Random Seed: %d\n\n", randomSeed);
+    printf("Atsitiktinumo koeficientas: %d\n\n", (randomSeed != -1) ? randomSeed : 0);
 
     // === PRADINIŲ MOKĖJIMŲ SIMULIACIJA ===
     double queueSimulation = simulateQueue(loanQueue, randomSeed);
-    printf("Simuliuojant eilę sumokėta: %.2f\n\n", queueSimulation);
+    printf("Mokant paskolą nuo seniausios iki naujausios: %.2f\n\n", queueSimulation);
 
     double PqueueSimulation = simulatePQueue(loanPQueue, randomSeed);
-    printf("Simuliuojant prioritetinę eilę sumokėta: %.2f\n\n", PqueueSimulation);
+    printf("Mokant paskolą nuo didžiausios iki mažiausios: %.2f\n\n", PqueueSimulation);
     
     return 0;
 }

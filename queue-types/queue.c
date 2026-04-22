@@ -62,7 +62,7 @@ char* toStringQueue(queue* Q) {
                  "    Paskola: %.2f\n"
                  "    Palūkanos: %.2f\n"
                  "    Delspinigiai: %.2f\n"
-                 "    Laikotarpis: %d\n"
+                 "    Laikotarpis: %d mėn.\n"
                  "    Palūkanos norma: %.2f\n"
                  "    Delspinigių norma: %.2f\n",
                  Q->items[i].sum, 
